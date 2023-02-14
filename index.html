@@ -1,0 +1,920 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samar's Beauty Brand</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Covered+By+Your+Grace&family=PT+Mono&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+ 
+
+<style>
+ body {
+  background-color: #fffbf8;
+}
+.shipping {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  background: #c60c88;
+  color: white;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.container {
+  max-width: 2000px;
+  padding: 0px;
+  display: block;
+  margin: 0 auto;
+}
+
+.header1 {
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+}
+.logo {
+  margin-top: -10px;
+}
+.perFU {
+  margin-left: 150px;
+  background: #fcecec;
+  padding: 7px 0 7px;
+  border-radius: 10px;
+}
+.makeU {
+  margin-left: 20px;
+  background: #fcecec;
+  padding: 7px 0 7px;
+  border-radius: 10px;
+}
+.skinC {
+  margin-left: 20px;
+  background: #fcecec;
+  padding: 7px 0 7px;
+  border-radius: 10px;
+}
+.gifS {
+  margin-left: 20px;
+  background: #fcecec;
+  padding: 7px 0 7px;
+  border-radius: 10px;
+}
+.specialO {
+  margin-left: 20px;
+  background: #fcecec;
+  padding: 7px 0 7px;
+  border-radius: 10px;
+}
+
+button {
+  color: black;
+  border: none;
+  background: transparent;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+button.skinC {
+  background: #f681cf;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+}
+strong {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+}
+li {
+  text-decoration: none;
+  display: inline;
+}
+.menu {
+  position: absolute;
+  top: 33px;
+  display: none;
+}
+
+.hoverzone {
+  position: relative;
+}
+
+.hoverzone:hover .menu {
+  display: block;
+}
+.form-select {
+  border-radius: 10px;
+  border: 1px solid #dc74ba;
+  padding: 5px;
+  margin: -10px 0 0 0;
+}
+
+.rose {
+  margin-top: -60px;
+}
+.text-b {
+  color: #f1e8e9;
+  background-color: rgb(8, 0, 0);
+  border: 1px solid rgb(74, 15, 15);
+  border-radius: 35px;
+  padding: 15px 30px 15px 30px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+  font-size: 20px;
+  margin-left: 250px;
+}
+.text-b:hover {
+  color: #fff;
+  background-color: #be0380;
+  border: 1px solid #bd1785;
+}
+
+.banner {
+  display: block;
+  margin: 0 auto;
+  margin-top: -20px;
+  border-radius: 30px;
+}
+.fav {
+  border-radius: 30px;
+}
+.dior {
+  border-radius: 30px;
+}
+
+.store {
+  background: transparent;
+  margin-left: -10;
+  opacity: 0.8;
+}
+.costumer {
+  background: transparent;
+  opacity: 0.8;
+}
+
+.search-field {
+  border-radius: 10px;
+  border: 1px solid #dc74ba;
+  padding: 5px;
+}
+.wrapper {
+  display: block;
+  margin: 100 auto;
+  background: radial-gradient(
+    1023px at 3.1% 6.9%,
+    rgb(255, 255, 255) 0%,
+    rgb(198, 12, 105) 74.9%
+  );
+
+  max-width: 60%;
+}
+.text {
+  margin-left: 50px;
+  padding-top: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+}
+.Right {
+  margin-top: 50px;
+}
+.fav {
+  font-family: "Italianno", cursive;
+}
+.valentine-sale {
+  background-color: #eee5e2;
+  display: block;
+  border-radius: 30px;
+  margin: 20px;
+  margin-top: -5px;
+  margin-bottom: 0px;
+  max-height: 345px;
+}
+.gif-val {
+  border-radius: 30px;
+  padding: 0px 0px 0px 0px;
+  margin-right: 0px;
+
+  
+}
+hr {
+  color: #3f0107;
+  font-size: 100px;
+  margin-top: -10px;
+}
+.lipstick {
+  margin-top: 0px;
+  margin-left: 20px;
+  padding: 0;
+  border-radius: 20px;
+}
+
+.val {
+  text-decoration: wavy;
+  color: #c60c88;
+}
+.sale {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+}
+.account {
+  font-size: 12px;
+  margin-top: 20px;
+  margin-left: -30px;
+}
+
+.fav {
+  margin-right: 20px;
+}
+.search-input {
+  font-size: 12px;
+  size: 10px;
+}
+.damn {
+  font-size: 12px;
+}
+.descriptions {
+  margin-top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-left: 30px;
+  color: #000;
+  margin-right: -250px;
+  opacity: 0.7;
+  line-height: 50px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+}
+.lov,
+.va {
+  color: rgb(200, 6, 6);
+  opacity: 1.99;
+  font-family: "Alex Brush", cursive;
+}
+
+.products {
+  border-radius: 30px;
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p.CATEGORY {
+  font-weight: 300px;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  background: #fcecec;
+  padding: 7px 0 7px;
+  border-radius: 10px;
+  color: #c60c88;
+  padding: 5px 10px;
+  border-radius: 50px;
+  border: 1px solid white;
+}
+.categoriesbtn {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 150;
+  background: #fcecec;
+  padding: 6px 0 7px;
+  border-radius: 50px;
+  max-height: 39px;
+}
+.cats {
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  max-width: 1200px;
+}
+.skinli {
+  margin-left: 70px;
+  border: 1px solid white;
+  background: #fcecec;
+  padding: 7px 0 7px;
+  border-radius: 10px;
+}
+.makeupli {
+  margin-left: 200px;
+  background: #fcecec;
+  border: 1px solid white;
+  padding: 7px 0 7px;
+  border-radius: 30px;
+}
+.perfumeli {
+  margin-left: 230px;
+  background: #fcecec;
+  border: 1px solid white;
+  padding: 7px 0 7px;
+  border-radius: 30px;
+}
+.gift-setsli {
+  margin-left: 210px;
+  border: 1px solid white;
+  padding: 7px 0 7px;
+  border-radius: 30px;
+}
+
+.cat1th {
+  border-radius: 30px;
+  border: 1px solid white;
+  padding: 7px 0 7px;
+  border-radius: 30px;
+}
+.cat2th {
+  border-radius: 30px;
+  opacity: 0.5px;
+  border: 1px solid white;
+  padding: 7px 0 7px;
+  border-radius: 30px;
+}
+.cat3th {
+  border-radius: 30px;
+  border: 1px solid white;
+  padding: 7px 0 7px;
+  border-radius: 30px;
+}
+.cat4th {
+  border: 1px solid white;
+  padding: 7px 0 7px;
+  border-radius: 10px;
+  border-radius: 30px;
+}
+footer {
+  background: #f9e0f1;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color: white;
+  padding: 10px 5px 10px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  margin-top: 100px;
+
+  max-width: 100%;
+}
+.content {
+  background-color: #c60c88;
+  padding-top: 10px;
+  color: white;
+}
+
+.contact-me {
+  padding-top: 50px;
+  color: #004997;
+  font-size: 12px;
+  font-weight: bold;
+}
+.contactme {
+  padding-top: 60px;
+  color: #c60c88;
+  font-size: 12px;
+}
+.no {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.contacts {
+  color: #000;
+}
+
+.my-favorite-garments {
+  border-radius: 30px;
+  max-width: 1519.2px;
+  display: block;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #fcf6ea;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 30px;
+}
+.my-stuff {
+  font-weight: 300px;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fcecec;
+  padding: 7px 0 7px;
+  border-radius: 10px;
+  color: #c60c88;
+  padding: 5px 10px;
+  border-radius: 50px;
+  border: 1px solid white;
+  display: block;
+  margin: 0 auto;
+}
+.things {
+  margin-top: 30px;
+}
+.my-p {
+  margin-left: 0px;
+  border-radius: 30px;
+}
+.my-favorite-perfumes {
+  padding: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 1450px;
+  border-radius: 20px;
+}
+.Ps {
+  padding: 0px 0px 0px 0px;
+  display: block;
+  margin: 0 auto;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.Ps6 {
+  padding: 0px 0px 0px 0px;
+  display: block;
+  margin: 0 auto;
+  margin-left: 0px;
+  margin-right: 10px;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.titr {
+  margin-left: 80px;
+  color: #6c6c6c;
+  font-size: 20px;
+  font-weight: bold;
+}
+.welcome {
+  font-weight: 200px;
+  font-size: 17px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  background: #fffbf8;
+  padding: 7px 0 7px;
+  border-radius: 10px;
+  color: #c60c88;
+  padding: 5px 10px;
+  border-radius: 50px;
+  border: 1px solid white;
+  max-width: 390px;
+  display: block;
+  margin: 0 auto;
+}
+.tip1 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #ea2aaa;
+  padding-top: 90px;
+  font-family: "Quicksand", sans-serif;
+}
+.tip2 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #f25f6e;
+  padding-top: 90px;
+  font-family: "Quicksand", sans-serif;
+}
+.tip3 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #d341b8;
+  padding-top: 90px;
+  font-family: "Quicksand", sans-serif;
+}
+.tip4 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #f8537f;
+  padding-top: 90px;
+  font-family: "Quicksand", sans-serif;
+}
+.tip5 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #be4278;
+  padding-top: 90px;
+  font-family: "Quicksand", sans-serif;
+}
+.tip6 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #f442b9;
+  padding-top: 90px;
+  font-family: "Quicksand", sans-serif;
+}
+</style>
+
+
+
+  </head>
+  
+  <body>
+    <div class="wrapper0 " w-100>
+    <p class="shipping">
+      ENJOY FREE SHIPPING AND SIGNATURE LANCOME PACKAGING ON ORDERS OVER 150$
+    </p>
+    <div class="welcome">Welcome! <span class="date" id="date"></span> </div>
+    
+    
+    <div class="container"><div class="fix">
+   
+   
+    
+<div class="row account"> <div class="col-4">
+  <ul><li>  <select class="form-select" aria-label="language">
+  <option selected>Choose Your Language</option>
+  <option value="1">English</option>
+  <option value="2">Coming soon</option>
+  <option value="3">...</option>
+</select></li>
+
+<li>
+ <button class="store">Find a store</button></li>
+
+ <li><button class="costumer">Costumer service</button></li></ul></div>
+
+<div class="col-4"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/437/original/font.jpg?1676299615" alt="pic" width="230px" class="=logo" /></div>
+<div class="col"></div>
+<div class="fav">
+<div class="col-12">
+<ul class="navbar-right d-flex justify-content-end align-items-center linkOnHeader nonBeepersoBlock">
+<li class="search-input" id="search-input">
+<div class="site-search" id="site-search" >
+
+
+
+
+<div class="input-search d-none d-sm-none d-md-flex">
+<input itemprop="query-input" placeholder="SEARCH" class="form-control search-field" type="search" name="q" value="" autocomplete="off" aria-label="Search (results will be available after the field once 3 or more characters are typed)" >
+<button class="custom-search-button">
+<svg class="svg-search gr-icon-search" width="20px" height="20px" viewBox="0 0 16 16">
+<defs>
+<polygon points="0 0 16 0 16 16 0 16"></polygon>
+</defs>
+<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+
+<path d="M5.71428571,9.53138959 L5.71428571,10.2857143 L5.99691383,10.2857143 C8.35344758,10.2857143 10.2857143,8.35344758 10.2857143,5.99691383 L10.2857143,5.71428571 L9.48460976,5.71428571 L9.48460976,5.99691383 C9.48460976,7.92918054 7.92918054,9.48396004 5.99691383,9.48396004 L5.71428571,9.48396004 L5.71428571,9.53138959 Z" fill="#000000"></path>
+<path d="M3.08681881,6.80971331 L3.08681881,6.52708519 C3.08681881,4.59481848 4.64224803,3.03938926 6.57451474,3.03938926 L6.85714286,3.03938926 L6.85714286,2.28571429 L6.57451474,2.28571429 C4.217981,2.28571429 2.28571429,4.217981 2.28571429,6.57386502 L2.28571429,6.85714286 L3.08681881,6.85714286 L3.08681881,6.80971331 Z" fill="#000000"></path>
+<g>
+<g></g>
+<path d="M6.37868885,0.877349806 C9.40900576,0.877349806 11.853779,3.25181558 11.853779,6.1933923 C11.853779,9.13568058 9.40900576,11.5094348 6.37868885,11.5094348 C3.34837194,11.5094348 0.90359873,9.13568058 0.90359873,6.1933923 C0.90359873,3.25181558 3.34837194,0.877349806 6.37868885,0.877349806 L6.37868885,0.877349806 Z M16.0002199,15.3290729 L11.003678,10.4776771 C12.1198019,9.34203212 12.7573777,7.84491615 12.7573777,6.1933923 C12.7573777,2.78716885 9.88682114,0 6.37868885,0 C2.87055655,0 0,2.78716885 0,6.1933923 C0,9.59961576 2.87055655,12.3867846 6.37868885,12.3867846 C7.86709843,12.3867846 9.19574766,11.9228494 10.2591068,11.0967317 L15.3091464,16.0000712 L16.0002199,15.3290729 Z" fill="#000000"></path>
+</g>
+</g>
+
+
+
+</svg>
+<span class="sr-only">Launch the search</span>
+</button>
+</div>
+</form>
+</div>
+
+</li>
+<li class="user">
+
+<svg class="svg-user" width="20px" height="20px" viewBox="0 0 19 22">
+<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g transform="translate(-302.000000, -17.000000)" fill="#000000" fill-rule="nonzero" stroke="#000000" stroke-width="0.1">
+<g transform="translate(303.000000, 18.000000)">
+<path d="M11.2777778,8.67088608 C12.7685185,7.91139241 13.8055556,6.32911392 13.8055556,4.62025316 C13.8055556,2.08860759 11.6666667,0 9.07407407,0 C6.48148148,0 4.27777778,2.02531646 4.27777778,4.55696203 C4.27777778,6.26582278 5.18518519,7.72151899 6.61111111,8.5443038 C2.85185185,9.49367089 0,12.7848101 0,16.7721519 L0,20 L0.518518519,20 L0.972222222,20 L16.5277778,20 L17.1759259,20 L17.5,20 L17.5,16.7721519 C17.4351852,12.9746835 14.8425926,9.74683544 11.2777778,8.67088608 Z M5.25,4.55696203 C5.25,2.53164557 6.93518519,0.82278481 9.07407407,0.82278481 C11.1481481,0.82278481 12.8981481,2.46835443 12.8981481,4.55696203 C12.8981481,6.64556962 11.212963,8.29113924 9.07407407,8.29113924 C6.93518519,8.29113924 5.25,6.64556962 5.25,4.55696203 Z M0.972222222,19.0506329 L0.972222222,16.7721519 C0.972222222,12.5949367 4.47222222,9.17721519 8.75,9.17721519 C13.0277778,9.17721519 16.5277778,12.5949367 16.5277778,16.7721519 L16.5277778,19.0506329 L0.972222222,19.0506329 Z"></path>
+</g>
+</g>
+</g>
+</svg>
+<span class="user-message sr-only sr-only-focusable">
+Login
+</span>
+</a>
+</li>
+<li class="minicart" data-action-url="/on/demandware.store/Sites-Guerlain_UK-Site/en_GB/Cart-MiniCartShow">
+<div class="minicart-total">
+<button class="minicart-link gr-icon-circled-wrapper" data-label="View shopping bag" aria-label="View shopping bag (0 item)" title="Your shopping bag">
+
+<svg class="svg-bag" width="20px" height="20px" viewBox="0 0 20 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g transform="translate(-339.000000, -17.000000)" fill="#000000" fill-rule="nonzero" stroke="#000000" stroke-width="0.1">
+<g transform="translate(340.000000, 18.000000)">
+<path d="M12.9965753,6.41509434 L12.9965753,3.83647799 C12.9965753,1.69811321 11.3013699,0 9.22945205,0 C7.15753425,0 5.46232877,1.76100629 5.46232877,3.83647799 L5.46232877,6.41509434 L0,6.41509434 L0,16.918239 C0,18.6163522 1.38127854,20 3.07648402,20 L15.2568493,20 C16.9520548,20 18.3333333,18.6163522 18.3333333,16.918239 L18.3333333,6.41509434 L12.9965753,6.41509434 Z M12.1803653,7.29559748 L12.1803653,10.5031447 L12.9965753,10.5031447 L12.9965753,7.29559748 L17.5799087,7.29559748 L17.5799087,16.9811321 C17.5799087,18.2389937 16.5753425,19.245283 15.3196347,19.245283 L3.07648402,19.245283 C1.82077626,19.245283 0.816210046,18.2389937 0.816210046,16.9811321 L0.816210046,7.29559748 L12.1803653,7.29559748 Z M9.22945205,0.817610063 C10.8618721,0.817610063 12.1803653,2.20125786 12.1803653,3.83647799 L12.1803653,6.41509434 L6.21575342,6.41509434 L6.21575342,3.83647799 C6.21575342,2.20125786 7.59703196,0.817610063 9.22945205,0.817610063 Z"></path>
+</g>
+</g>
+</g>
+</svg>
+
+
+</span>
+</button>
+</div>
+</li></div>
+</ul>
+</div></div>
+
+    
+      <div class="header1">
+      <ul>
+
+          
+
+
+        
+          <li class="perFU"><button> <a href="#title1"> Perfume </a></button></li>
+          <li class="gifS"><button> <a href="#title2"> Body</a>
+
+  </button></li>  <li class="makeU"><button><a href="#title3"> Makeup </a>
+
+ </button></li><li class="skinC"> <button> <a href="#title4"> Skincare </a>
+
+  </button></li>
+          <li class="specialO"><button> <a href="#title5"> Beauty Tips</a>
+
+  </button></li>
+
+         
+          
+  
+
+         </ul>
+        </div></div>
+      
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/434/original/Untitled-1b.jpg?1676299460" alt="" width="100%" class="banner">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/436/original/favorite.jpg?1676299533" alt="" width="100%" class="fav">
+<a href="https://www.dior.com/en_gb/beauty/products/Y0996212-dior-forever-couture-luminizer-longwear-highlighter-95-*-natural-origin-pigments" target="_blank"><div class="dior"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/432/original/dior123.jpg?1676299403" alt="" width="100%" class="dior"></div></a>
+      
+
+      
+    
+   <hr>
+<div class="valentine-sale">
+
+
+<div class="row">
+  <div class="col-3"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/433/original/lily1.jpg?1676299407" alt="" width="400px"></a></div>
+  <div class="col-4">
+<div class="descriptions">
+<span >
+<span class="lov">
+LOVE</span> IS IN THE AIR
+</span>
+<h2 ><span class="va">
+VALENTINE'S</span> DAY SPECIAL SALE
+</h2>
+<span  >
+up to 30% OFF </span>
+<div> BESIDES 5-PIECE MYSTERY GIFT WHEN YOU SPEND $250+
+</div></div>
+<button class="txt"><a href="https://www.lancome.co.uk/discover-lancome/valentines-day-gifts.html" target="_blank"> <span class="text-b">DISCOVER</span></a></button>
+
+</div>
+<div class="col"><div class="col-2"></div></div><div class="col"></div>
+<div class="col-3 videocol">
+
+
+  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/448/original/valentine.gif?1676300454"class="gif-val" width="220px">
+  
+
+  
+
+</video></div> </div>
+
+
+
+
+</div>
+
+<div class="products">
+ <P class="CATEGORY"> SHOP BY CATEGORY</P>
+ 
+
+  <div class="categoriesbtn"><ul class="cat">
+<li class="skinli"><button class="skin-care-btn"> SKIN CARE</button></li>
+<li class="makeupli"><button>MAKEUP</button></li>
+<li class="perfumeli"><button>PERFUME</button></li>
+<li class="gift-setsli"><button>GIFT SETS</button></li>
+
+</ul></div>
+<ul class="cats">
+  <li class="skincare-li"><button> <a href="https://www.lancome.co.uk/skincare/"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/452/original/skincare.jpg?1676300998" alt=""  class="cat1th" width="276px"></a></button></li>
+  <li class="makeup-li"><button>  <a href="https://www.chanel.com/us/makeup/lips/c/5x1x1x31/lipstick/"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/491/original/cha.jpg?1676305518" class="cat2th" alt=""width="276px"></a></button></li>
+  <li class="perfume-li"><button><a href="https://www.yslbeauty.co.uk/fragrance" target="_blank"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/450/original/yvsl0.jpg?1676300776.jpg" class="cat3th" alt=""width="276px"></a></button></li>
+  <li class="gift-li"><button><a href="https://www.dior.com/en_gb/beauty/gifts/fragrance-beauty/gift-sets" target="_blank"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/438/original/diors.JPG?1676299639" class="cat4th" alt=""width="276px"></a></button></li>
+  </div>
+</ul>
+
+
+
+
+<div class="my-favorite-garments">
+
+  
+
+ 
+ <p class="my-stuff">  MY Favorite Beauty Garments</p>
+ 
+<div class="things"></div>
+
+<div class="row"><div class="col my-favorite-perfumes"><p class="titr" id="title1"> Perfumes</p></div>
+
+<div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div>
+</div>
+<div class="row"><div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/497/original/s_%284%29.jpg?1676307150" alt="" width="250" class="my-p"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/501/original/IMG_0019.jpg?1676308251" alt="" width="160px" class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/504/original/yvsl.jpg?1676308290" alt="" width="160px"class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/498/original/s_%282%29.jpg?1676307167" alt="" width="160px"class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/528/original/IMG_0054.jpg?1676310234" alt="" width="160px" class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/502/original/IMG_9846.jpg?1676308265" alt="" width="160px"class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/537/original/IMG_0052.JPG?1676314201" alt="" width="160px"class="Ps6"></div>
+</div>
+
+
+
+
+
+<div class="row"><div class="col"><p class="titr" id="title2"> Body</p></div>
+<div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div>
+</div>
+<div class="row"><div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/496/original/s_%285%29.jpg?1676307131" alt="" width="250"class="my-p"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/558/original/IMG_0056.jpg?1676316592" alt="" width="160px" class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/518/original/IMG_0040.jpg?1676309392" alt="" width="160px"class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/520/original/IMG_0044.jpg?1676309410" alt="" width="160px"class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/517/original/IMG_0035.jpg?1676309386" alt="" width="160px" class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/519/original/IMG_0042.jpg?1676309400" alt="" width="160px"class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/565/original/IMG_0046.JPG?1676316999" alt="" width="160px"class="Ps6"></div>
+</div>
+
+
+
+
+<div class="row"><div class="col"><p class="titr" id="title3"> Makeup</p></div>
+<div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div>
+</div>
+<div class="row"><div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/495/original/s_%2810%29.jpg?1676307119" alt="" width="250"class="my-p"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/567/original/makeup_%287%29.jpg?1676318128" alt="" width="160px" class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/512/original/IMG_0025.jpg?1676309349" alt="" width="160px"class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/524/original/IMG_9837.jpg?1676309452" alt="" width="160px"class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/567/original/makeup_%287%29.jpg?1676318128" alt="" width="160px" class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/521/original/IMG_0048.jpg?1676309419" alt="" width="160px"class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/566/original/IMG_0068.JPG?1676317977" alt="" width="160px"class="Ps6"></div>
+</div>
+
+
+
+<div class="row"><div class="col"><p class="titr" id="title4"> Skincare</p></div>
+<div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div>
+</div>
+<div class="row"><div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/499/original/s_%281%29.jpg?1676307178" alt="" width="250"class="my-p"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/621/original/IMG_0027.JPG?1676333846" alt="" width="160px"class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/509/original/IMG_0031.JPG?1676308690" alt="" width="160px"class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/514/original/IMG_0026.jpg?1676309363" alt="" width="160px"class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/513/original/IMG_0029.jpg?1676309356" alt="" width="160px" class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/516/original/IMG_0033.jpg?1676309379" alt="" width="160px"class="Ps"></div>
+<div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/515/original/IMG_0032.jpg?1676309370" alt="" width="160px"class="Ps6"></div>
+</div>
+
+
+<div class="row"><div class="col"><p class="titr" id="title5"> Tips</p></div>
+<div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div>
+</div>
+<div class="row"><div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/615/original/samarr.jpg?1676331961" alt="" width="250"class="my-p"></div>
+<div class="col"><p class="tip1"> Fall in love <br> with taking care <br> of yourself.</p></div>
+<div class="col"><p class="tip2">I only wear SPF <br> on days that end <br> in "y"</p></div>
+<div class="col"><p class="tip3">May your curls grow and your skin glow.</p></div>
+<div class="col"><p class="tip4">A little lipstick always helps!</p></div>
+<div class="col"><p class="tip5">Makeup: <br> use it to highlight <br> your face not to hide it.</p></div>
+<div class="col"><p class="tip6">GET GLOWING, <br> THE WORLD NEEDS <br> YOUR MAGIC.</p></div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<footer class="footer">
+	<div class="content">
+	
+				<div class="row">
+					<div class="col">
+						<p>
+							This website was coded and photographed by
+							
+								<a href="https://www.shecodes.io/graduates/62436-samar-joharchi" target="_blank">Samar Joharchi</a><small>, and is partly <a href="https://github.com/imsamar/Beauty-Brand" target="_blank">open-sourced</a>.
+							</small>
+						</p>	
+						</div>	</div></div>
+         
+            <div class="row no w-100">
+						<div class="col">
+					<span class="contact-me">	CONTACT ME</span>
+						
+						
+					
+					
+					
+	
+    <span class="contactme"><span>
+      		
+					<a href="https://www.instagram.com/samarjoharchi/" target="_blank"><strong>Instagram</strong></a>
+				</span>
+				<span>
+					
+					<a href="linkedin.com/in/samar-joharchi-37a832255" target="_blank"><strong>LinkedIn</strong></a> 
+				</span>
+				<span>
+
+				 <a href="https://www.facebook.com/samar.joharchi" target="_blank"><strong>Facebook</strong></a>
+				</span>
+
+				<span>
+					<i class="fab fa-twitter" aria-hidden="true"></i> <a href="https://www.twitter.com/joharchiSamar/" target="_blank"><strong>Twitter</strong></a>
+				</span></span>
+			</div></div> 
+			<div>
+
+
+		</div>
+	
+</footer>
+</div>
+
+
+
+    
+  
+
+
+
+
+
+    <script>
+
+      function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  let days = [
+    "Sunday",
+    "Monday",
+    "Thuesday",
+    "Wednsday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  return `${day} ${hours}:${minutes}`;
+}
+
+let dateElement = document.querySelector("#date");
+let date = new Date();
+dateElement.innerHTML = formatDate(date);
+    </script>
+  </body>
+</html>
+
